@@ -3,5 +3,5 @@ class Article < ApplicationRecord
     #Campos
     #Escribir metodos
     validates :title, presence: true
-    validates :body, presence: true
+    validates :body, presence: true, length: {minimum: 20} 
 end
